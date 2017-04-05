@@ -4,7 +4,7 @@
 angular.module('app').controller('sendCtrl', ['$scope','$http','$cookies','$state', function($scope,$http,$cookies,$state){
 	$http({
 		method:'get',
-		url:'../data/myPost.json',
+		url:'data/myPost.json',
 		responseType:'json'
 	}).then(function(resp){
 		console.log(resp);

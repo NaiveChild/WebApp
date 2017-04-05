@@ -4,7 +4,7 @@
 angular.module('app').controller('seaCtrl', ['$scope','$http', function($scope,$http){
 	$http({
 		method:'get',
-		url:'../data/city.json',
+		url:'data/city.json',
 		responseType:'json'
 	}).then(function(resp){
 		$scope.city=resp.data;
@@ -15,7 +15,7 @@ angular.module('app').controller('seaCtrl', ['$scope','$http', function($scope,$
 
 	$http({
 		method:'get',
-		url:'../data/salary.json',
+		url:'data/salary.json',
 		responseType:'json'
 	}).then(function(resp){
 		$scope.salary=resp.data;
@@ -25,7 +25,7 @@ angular.module('app').controller('seaCtrl', ['$scope','$http', function($scope,$
 
 	$http({
 		method:'get',
-		url:'../data/scale.json',
+		url:'data/scale.json',
 		responseType:'json'
 	}).then(function(resp){
 		$scope.scale=resp.data;

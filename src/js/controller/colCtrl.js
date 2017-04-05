@@ -4,7 +4,7 @@
 angular.module('app').controller('colCtrl', ['$scope','$http','$cookies','$state', function($scope,$http,$cookies,$state){
 	$http({
 		method:'get',
-		url:'../data/myFavorite.json',
+		url:'data/myFavorite.json',
 		responseType:'json'
 	}).then(function(resp){
 		$scope.cols=resp.data;
@@ -13,7 +13,7 @@ angular.module('app').controller('colCtrl', ['$scope','$http','$cookies','$state
 	});
 	
 
-	$scope.imgsrc='../image/star-active.png';
+	$scope.imgsrc='image/star-active.png';
 	$scope.flag=true;
 	var user=$cookies.getObject('user');
 	if(user){
@@ -21,10 +21,10 @@ angular.module('app').controller('colCtrl', ['$scope','$http','$cookies','$state
 	}
 
 	$scope.doChange=function(){
-		if($scope.imgsrc=='../image/star-active.png'){
-			$scope.imgsrc='../image/star.png';
+		if($scope.imgsrc=='image/star-active.png'){
+			$scope.imgsrc='image/star.png';
 		}else {
-			$scope.imgsrc='../image/star-active.png';
+			$scope.imgsrc='image/star-active.png';
 		}
 	}
 

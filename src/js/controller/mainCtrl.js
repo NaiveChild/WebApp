@@ -4,7 +4,7 @@
 angular.module('app').controller('mainCtrl', ['$scope','$http','$cookies', function($scope,$http,$cookies){
 	$http({
 		method:'get',
-		url:'../data/positionList.json',
+		url:'data/positionList.json',
 		responseType:'json'
 	}).then(function(resp){
 		$scope.user=resp.data;

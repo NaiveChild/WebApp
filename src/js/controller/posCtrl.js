@@ -4,7 +4,7 @@
 angular.module('app').controller('posCtrl', ['$scope','$http','$state', function($scope,$http,$state){
 	$http({
 		method:'get',
-		url:'../data/company.json?id='+$state.params.id,
+		url:'data/company.json?id='+$state.params.id,
 		responseType:'json'
 	}).then(function(resp){
 		console.log(resp);

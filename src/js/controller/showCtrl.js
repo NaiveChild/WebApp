@@ -4,7 +4,7 @@
 angular.module('app').controller('showCtrl', ['$scope','$http','$state','$cookies', function($scope,$http,$state,$cookies){
 	$http({
 		method:'get',
-		url:'../data/position.json?id='+$state.params.id,
+		url:'data/position.json?id='+$state.params.id,
 		responseType:'json'
 	}).then(function(resp){
 		$scope.details=resp.data;
@@ -14,7 +14,7 @@ angular.module('app').controller('showCtrl', ['$scope','$http','$state','$cookie
 
 	$http({
 		method:'get',
-		url:'../data/company.json',
+		url:'data/company.json',
 		responseType:'json'
 	}).then(function(resp){
 		$scope.company=resp.data;
@@ -22,7 +22,7 @@ angular.module('app').controller('showCtrl', ['$scope','$http','$state','$cookie
 		console.log('请求失败：'+resp.status+','+resp.statusText);
 	});
 
-	$scope.imgsrc='../image/star.png';
+	$scope.imgsrc='image/star.png';
 	$scope.txt='投个简历';
 	$scope.flag1=false;
 	$scope.flag2=true;
@@ -33,11 +33,11 @@ angular.module('app').controller('showCtrl', ['$scope','$http','$state','$cookie
 	}
 
 	$scope.doChange=function(){
-		if($scope.imgsrc=='../image/star.png'){
-			$scope.imgsrc='../image/star-active.png';
+		if($scope.imgsrc=='image/star.png'){
+			$scope.imgsrc='image/star-active.png';
 			$scope.txt='已投递';
 		}else {
-			$scope.imgsrc='../image/star.png';
+			$scope.imgsrc='image/star.png';
 			$scope.txt='投个简历';
 		}
 		

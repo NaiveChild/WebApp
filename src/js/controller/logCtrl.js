@@ -4,7 +4,7 @@
 angular.module('app').controller('logCtrl', ['$scope','$http','$cookies', function($scope,$http,$cookies){
 	$http({
 		method:'get',
-		url:'../data/login.json',
+		url:'data/login.json',
 		responseType:'json'
 	}).then(function(resp){
 		$scope.results=resp.data;
