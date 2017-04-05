@@ -1,0 +1,28 @@
+<div class="list" ng-controller="sendCtrl">
+	<div ng-repeat="(k, v) in send" class="item" ng-hide="flag1">
+		<img ng-src="{{v.imageUrl}}">
+		<div class="img-txt">
+			<h2>{{v.companyName}}[{{v.cityName}}] {{v.industryName}} {{v.scaleName}}</h2>
+			<p>{{v.salaryName}}</p>
+			<h2>{{v.date}}</h2>
+		</div>
+	</div>
+
+	<div class="item" ng-hide="flag2">
+		<img ng-src="{{send[0].imageUrl}}">
+		<div class="img-txt">
+			<h2>{{send[0].companyName}}[{{send[0].cityName}}] {{send[0].industryName}} {{send[0].scaleName}}</h2>
+			<p>{{send[0].salaryName}}</p>
+			<h2>{{send[0].date}}</h2>
+		</div>
+	</div>
+
+	<div class="item" ng-hide="flag3">
+		<img ng-src="{{send[1].imageUrl}}">
+		<div class="img-txt">
+			<h2>{{send[1].companyName}}[{{send[1].cityName}}] {{send[1].industryName}} {{send[1].scaleName}}</h2>
+			<p>{{send[1].salaryName}}</p>
+			<h2>{{send[1].date}}</h2>
+		</div>
+	</div>
+</div>

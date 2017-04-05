@@ -1,0 +1,14 @@
+<div class="login-content">
+	<div ng-hide="flag1" class="tolog">
+		<button ui-sref="home">去登录</button>
+	</div>
+	<div ng-hide="flag2" class="exit">
+		<img ng-src="{{results.image}}">
+		<p ng-bind="results.name"></p>
+		<div class="btns">
+			<button ui-sref="send">投递</button>
+			<button ui-sref="collect">收藏</button>
+		</div>
+		<button class="exitbtn" ui-sref="main" ng-click="doExit()">退出登录</button>
+	</div>
+</div>
