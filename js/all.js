@@ -50,8 +50,8 @@ angular.module("app", ["ui.router", "ngCookies"]), angular.module("app").config(
 		t.cols = e.data
 	}, function(t) {
 		console.log("请求失败：" + t.status + "," + t.statusText)
-	}), t.imgsrc = "../image/star-active.png", t.flag = !0, o.getObject("user") && (t.flag = !1), t.doChange = function() {
-		"../image/star-active.png" == t.imgsrc ? t.imgsrc = "../image/star.png" : t.imgsrc = "../image/star-active.png"
+	}), t.imgsrc = "image/star-active.png", t.flag = !0, o.getObject("user") && (t.flag = !1), t.doChange = function() {
+		"image/star-active.png" == t.imgsrc ? t.imgsrc = "image/star.png" : t.imgsrc = "image/star-active.png"
 	}
 }]), angular.module("app").controller("homeCtrl", ["$scope", "$http", "$cookies", "$state", function(t, e, o, a) {
 	t.checkLog = function() {
