@@ -61,7 +61,7 @@ angular.module("app", ["ui.router", "ngCookies"]), angular.module("app").config(
 }]), angular.module("app").controller("logCtrl", ["$scope", "$http", "$cookies", function(t, e, o) {
 	e({
 		method: "get",
-		url: "../data/login.json",
+		url: "data/login.json",
 		responseType: "json"
 	}).then(function(e) {
 		t.results = e.data
