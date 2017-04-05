@@ -234,8 +234,8 @@ angular.module("app", ["ui.router", "ngCookies"]), angular.module("app").config(
 		t.company = e.data
 	}, function(t) {
 		console.log("请求失败：" + t.status + "," + t.statusText)
-	}), t.imgsrc = "../image/star.png", t.txt = "投个简历", t.flag1 = !1, t.flag2 = !0, a.getObject("user") && (t.flag1 = !0, t.flag2 = !1), t.doChange = function() {
-		"../image/star.png" == t.imgsrc ? (t.imgsrc = "../image/star-active.png", t.txt = "已投递") : (t.imgsrc = "../image/star.png", t.txt = "投个简历")
+	}), t.imgsrc = "image/star.png", t.txt = "投个简历", t.flag1 = !1, t.flag2 = !0, a.getObject("user") && (t.flag1 = !0, t.flag2 = !1), t.doChange = function() {
+		"image/star.png" == t.imgsrc ? (t.imgsrc = "image/star-active.png", t.txt = "已投递") : (t.imgsrc = "image/star.png", t.txt = "投个简历")
 	}
 }]), angular.module("app").directive("appCollectContent", [function() {
 	return {
