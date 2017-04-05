@@ -1,0 +1,33 @@
+<div class="regist-content home-content">
+	<div class="inputs">
+		<ul>
+			<li>
+				<i class="iconfont icon-wo"></i>
+			</li>
+			<li>
+				<input type="text" placeholder="输入手机号" ng-model="phone" ng-blur="checkPhone()">
+				<span ng-bind="phonetxt"></span>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<i class="iconfont icon-mima"></i>
+			</li>
+			<li>
+				<input type="text" placeholder="设置6位以上的密码" ng-model="pwd" ng-blur="checkPwd()">
+				<span ng-bind="pwdtxt"></span>
+			</li>
+		</ul>
+		
+	</div>
+
+	<div class="message">
+		<input type="text" placeholder="短信验证码" ng-model="codetxt">
+		<button ng-click="doClick()" ng-bind="mestxt"></button>
+	</div>
+	
+	<div class="btns">
+		<button ui-sref="home">登录</button>
+		<button ui-sref="regist" ng-click="checkReg()">注册</button>
+	</div>
+</div>

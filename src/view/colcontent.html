@@ -1,0 +1,10 @@
+<div class="list" ng-controller="colCtrl">
+	<div ng-repeat="(k, v) in cols" class="item">
+		<img ng-src="{{v.imageUrl}}">
+		<div class="img-txt">
+			<h2>{{v.companyName}}[{{v.cityName}}] {{v.industryName}} {{v.scaleName}}<img ng-src="{{imgsrc}}" ng-hide="flag" ng-click="doChange()"></h2>
+			<p>{{v.salaryName}}</p>
+			<h2>{{v.date}}</h2>
+		</div>
+	</div>
+</div>

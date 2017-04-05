@@ -1,0 +1,10 @@
+<div class="list" ng-controller="mainCtrl">
+	<div ng-repeat="(k, v) in user" class="item" ui-sref="show({id:v.id})">
+		<img ng-src="{{v.imageUrl}}">
+		<div class="img-txt">
+			<h2>{{v.companyName}}[{{v.cityName}}] {{v.industryName}} {{v.scaleName}}</h2>
+			<p>{{v.salaryName}}</p>
+			<h2>{{v.date}}</h2>
+		</div>
+	</div>
+</div>

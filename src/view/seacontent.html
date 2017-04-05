@@ -1,0 +1,23 @@
+<div class="search-content" ng-controller="seaCtrl">
+	<div class="bg" ng-hide="flag1" ng-click="hidesth()"></div>
+	<div class="city" ng-hide="flag2">
+		<ul>
+			<li ng-repeat="(k,v) in city" ng-bind="v.name"></li>
+		</ul>
+		<button ng-click="hidesth()">取消</button>
+	</div>
+
+	<div class="salary city" ng-hide="flag3">
+		<ul>
+			<li ng-repeat="(k,v) in salary" ng-bind="v.name"></li>
+		</ul>
+		<button ng-click="hidesth()">取消</button>
+	</div>
+
+	<div class="scale city" ng-hide="flag4">
+		<ul>
+			<li ng-repeat="(k,v) in scale" ng-bind="v.name"></li>
+		</ul>
+		<button ng-click="hidesth()">取消</button>
+	</div>
+</div>

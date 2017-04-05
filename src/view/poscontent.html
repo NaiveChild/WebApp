@@ -1,0 +1,20 @@
+<div class="position-content">
+	<h1>职位分类</h1>
+	<button ng-click="doChange1()" ng-style="obj1">{{btn1.name}}</button>
+	<button ng-click="doChange2()" ng-style="obj2">{{btn2.name}}</button>
+	<div class="txt1 txt" ng-hide="flag1">
+		<ul>
+			<li ng-bind="js.name"></li>
+			<li ng-bind="js.createdDate"></li>
+		</ul>
+		<p ng-bind="js.salary"></p>
+	</div>
+
+	<div class="txt2 txt" ng-hide="flag2">
+		<ul>
+			<li ng-bind="yy.name"></li>
+			<li ng-bind="yy.createdDate"></li>
+		</ul>
+		<p ng-bind="yy.salary"></p>
+	</div>
+</div>
