@@ -44,7 +44,7 @@ angular.module("app", ["ui.router", "ngCookies"]), angular.module("app").config(
 }]), angular.module("app").controller("colCtrl", ["$scope", "$http", "$cookies", "$state", function(t, e, o, a) {
 	e({
 		method: "get",
-		url: "../data/myFavorite.json",
+		url: "data/myFavorite.json",
 		responseType: "json"
 	}).then(function(e) {
 		t.cols = e.data
