@@ -56,7 +56,7 @@ angular.module('app').controller('regCtrl', ['$scope','$http','$cookies','$inter
 		console.log(112);
 		if($scope.flag1 && $scope.flag2){
 			$cookies.putObject('user',{phone:$scope.phone,pwd:$scope.pwd,state:1});
-			// $state.go('home');
+			$state.go('home');
 			// console.log(111);
 		}
 	}
