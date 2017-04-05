@@ -187,7 +187,7 @@ angular.module("app", ["ui.router", "ngCookies"]), angular.module("app").config(
 		url: "data/myPost.json",
 		responseType: "json"
 	}).then(function(e) {
-		console.log(e), t.send = e.data
+		t.send = e.data
 	}, function(t) {
 		console.log("请求失败：" + t.status + "," + t.statusText)
 	}), t.flag1 = !1, t.flag2 = !0, t.flag3 = !0, t.cla = {
